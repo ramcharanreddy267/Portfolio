@@ -3,9 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Finance Portfolio | Coming Soon</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+        background: radial-gradient(circle at top, #1f3b70 0%, #0f172a 45%, #020617 100%);
+        color: #e2e8f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+
+      .container {
+        width: min(960px, 100%);
+        background: rgba(15, 23, 42, 0.72);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 18px;
+        padding: clamp(1.5rem, 4vw, 3rem);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+      }
+
+      .badge {
+        display: inline-block;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #bfdbfe;
+        background: rgba(59, 130, 246, 0.18);
+        border: 1px solid rgba(96, 165, 250, 0.35);
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        margin: 1rem 0 0.75rem;
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0;
+        max-width: 62ch;
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+
+      .options {
+        margin-top: 2rem;
+        display: grid;
+        gap: 0.9rem;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      }
+
+      .option {
+        border: 1px solid rgba(148, 163, 184, 0.24);
+        background: rgba(15, 23, 42, 0.8);
+        border-radius: 12px;
+        padding: 1rem;
+      }
+
+      .option h2 {
+        font-size: 1rem;
+        margin: 0 0 0.35rem;
+        color: #f8fafc;
+      }
+
+      .option span {
+        font-size: 0.9rem;
+        color: #94a3b8;
+      }
+
+      .actions {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      button {
+        border: none;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        cursor: not-allowed;
+      }
+
+      .primary {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: #f8fafc;
+      }
+
+      .secondary {
+        background: rgba(30, 41, 59, 0.95);
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        color: #e2e8f0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Coming Soon</h1>
+    <main class="container">
+      <span class="badge">Launching Soon</span>
+      <h1>Finance Portfolio</h1>
+      <p>
+        A modern personal portfolio is on the way. I am preparing sections for my profile,
+        projects, certifications, and contact details. Stay tuned for the full launch.
+      </p>
+
+      <section class="options" aria-label="Upcoming portfolio sections">
+        <article class="option">
+          <h2>About Me</h2>
+          <span>Education, interests, and career goals</span>
+        </article>
+        <article class="option">
+          <h2>Projects</h2>
+          <span>Finance and analytics work showcase</span>
+        </article>
+        <article class="option">
+          <h2>Resume</h2>
+          <span>Downloadable profile and achievements</span>
+        </article>
+        <article class="option">
+          <h2>Contact</h2>
+          <span>Email and professional links</span>
+        </article>
+      </section>
+
+      <div class="actions">
+        <button class="primary" type="button" aria-label="Portfolio coming soon">Coming Soon</button>
+        <button class="secondary" type="button" aria-label="More updates coming soon">
+          More Options Soon
+        </button>
+      </div>
+    </main>
   </body>
 </html>
